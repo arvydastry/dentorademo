@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dentora — burnos priežiūros parduotuvė</title>
+<meta name="description" content="Demo dizainas: Dentora — burnos ir dantų priežiūros el. parduotuvė. Daugiau nei 1 000 prekių, pristatymas per 1–2 d. d., B2B kainos verslui.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230E4A54'/%3E%3Cpath d='M12 4.6c-1.9 0-2.3 1.1-3.8 1.1S5.3 6.8 5.3 9c0 3 1.5 4.5 2.2 8.2.3 1.3 1.6 1.4 1.9 0 .4-1.8.7-3 2.6-3s2.2 1.2 2.6 3c.3 1.4 1.6 1.3 1.9 0C17.2 13.5 18.7 12 18.7 9c0-2.2-1.4-3.3-2.9-3.3S13.9 4.6 12 4.6z' fill='%237FE0DA'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-return" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-cookie" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-sync" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+    <symbol id="i-percent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 4h-7M10 4H3M21 12h-9M8 12H3M21 20h-5M12 20H3M14 2v4M8 10v4M16 18v4"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="M3.3 7 12 12l8.7-5"/><path d="M12 22V12"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  </defs>
+</svg>
+
+<!-- ===== ANTRAŠTĖ ===== -->
+<header class="site-header site-header--overlay" id="siteHeader">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__group">
+        <a href="#" data-demo><svg><use href="#i-phone"/></svg><span>+370 678 59 04</span></a>
+        <a href="#" data-demo class="topbar__hide-m"><svg><use href="#i-mail"/></svg><span>info@dentora.lt</span></a>
+      </div>
+      <div class="topbar__promo topbar__hide-m">Nemokamas pristatymas nuo 39 € · –10 % pirmam užsakymui su kodu <b>LABAS10</b></div>
+      <div class="topbar__group">
+        <a href="b2b.html" class="topbar__hide-m">Verslui (B2B)</a>
+        <div class="lang" data-lang>
+          <button class="lang__btn" type="button" aria-haspopup="true"><svg width="13" height="13"><use href="#i-globe"/></svg>LT · €<svg width="11" height="11"><use href="#i-chev"/></svg></button>
+          <div class="lang__menu">
+            <button type="button" class="is-active">🇱🇹 Lietuvių</button>
+            <button type="button" data-lang-demo>🇬🇧 English</button>
+            <button type="button" data-lang-demo>🇵🇱 Polski</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-inner">
+      <a class="logo" href="./" aria-label="Dentora — pradžia">
+        <svg class="logo__mark" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="7" fill="#0E4A54"/><path d="M12 4.6c-1.9 0-2.3 1.1-3.8 1.1S5.3 6.8 5.3 9c0 3 1.5 4.5 2.2 8.2.3 1.3 1.6 1.4 1.9 0 .4-1.8.7-3 2.6-3s2.2 1.2 2.6 3c.3 1.4 1.6 1.3 1.9 0C17.2 13.5 18.7 12 18.7 9c0-2.2-1.4-3.3-2.9-3.3S13.9 4.6 12 4.6z" fill="#7FE0DA"/></svg>
+        <span>dentora<i>.</i></span>
+      </a>
+      <nav class="nav" aria-label="Pagrindinis meniu">
+        <a class="nav__link is-active" href="./">Pradžia</a>
+        <a class="nav__link" href="parduotuve.html">Parduotuvė</a>
+        <div class="nav__item">
+          <a class="nav__link" href="parduotuve.html">Kategorijos <svg><use href="#i-chev"/></svg></a>
+          <div class="nav__sub">
+            <a href="parduotuve.html?cat=elektriniai">Elektriniai šepetėliai <small>48</small></a>
+            <a href="parduotuve.html?cat=pastos">Dantų pastos <small>156</small></a>
+            <a href="parduotuve.html?cat=tarpdanciu">Tarpdančių priežiūra <small>67</small></a>
+            <a href="parduotuve.html?cat=skalavimo">Skalavimo skysčiai <small>38</small></a>
+            <a href="parduotuve.html?cat=balinimas">Balinimas <small>31</small></a>
+            <a href="parduotuve.html?cat=vaikams">Vaikams <small>52</small></a>
+            <a href="parduotuve.html" class="nav__sub-all">Visos kategorijos <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <a class="nav__link" href="parduotuve.html?f=akcija">Akcijos</a>
+        <a class="nav__link" href="#" data-demo>Patarimai</a>
+        <a class="nav__link" href="b2b.html">B2B</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" data-open="search" aria-label="Paieška"><svg><use href="#i-search"/></svg></button>
+        <button class="icon-btn" type="button" data-demo aria-label="Paskyra"><svg><use href="#i-user"/></svg></button>
+        <button class="icon-btn" type="button" data-count="3" data-wish-count data-demo aria-label="Mėgstamos prekės"><svg><use href="#i-heart"/></svg></button>
+        <button class="icon-btn" type="button" data-count="3" data-cart-count data-open="cart" aria-label="Krepšelis"><svg><use href="#i-cart"/></svg></button>
+        <button class="icon-btn burger" type="button" data-open="nav" aria-label="Meniu"><svg><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="hero" data-tilt-scene>
+  <img class="hero__poster" src="assets/img/3762453.jpg" alt="" aria-hidden="true">
+  <video class="hero__media" autoplay muted loop playsinline preload="metadata" poster="assets/img/3762453.jpg">
+    <source src="assets/video/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero__floats" aria-hidden="true">
+    <div class="float-card float-card--product" data-depth="18">
+      <img src="assets/img/13466251.jpg" alt="">
+      <div><div class="t">Curaprox CS 5460<br>Ultra Soft</div><div class="p">6,90 €</div></div>
+    </div>
+    <div class="float-chip" data-depth="30"><svg><use href="#i-bolt"/></svg>Išsiunčiame per 24 val.</div>
+    <div class="float-card float-card--review" data-depth="10">
+      <span class="stars" style="--r:100%">★★★★★</span>
+      <p>„Užsakiau vakare — kitą dieną jau atsiėmiau paštomate.“</p>
+      <span>Ieva, Vilnius</span>
+    </div>
+  </div>
+  <div class="container">
+    <div class="hero__content">
+      <span class="hero__eyebrow"><span class="dot"></span>Burnos priežiūros specialistai</span>
+      <h1>Viskas sveikai <em>šypsenai</em> — vienoje vietoje</h1>
+      <p class="hero__lead">Daugiau nei 1 000 kruopščiai atrinktų burnos higienos priemonių — nuo kasdienių pastų iki profesionalių irigatorių. Originalios prekės, greitas pristatymas visoje Lietuvoje.</p>
+      <div class="hero__cta">
+        <a class="btn btn--accent btn--lg" href="parduotuve.html">Apžiūrėti parduotuvę <svg><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost btn--lg" href="b2b.html">Pasiūlymai verslui</a>
+      </div>
+      <div class="hero__trust">
+        <span class="stars" style="--r:96%">★★★★★</span>
+        <span><b>4,9 / 5</b> — daugiau nei 2 400 pirkėjų įvertinimų</span>
+      </div>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#kategorijos" aria-label="Slinkti žemyn">Žemyn<span></span></a>
+</section>
+
+<!-- ===== USP ===== -->
+<div class="usp-wrap">
+  <div class="container">
+    <div class="usp-strip reveal">
+      <div class="usp">
+        <div class="usp__icon"><svg><use href="#i-truck"/></svg></div>
+        <div><b>Nemokamas pristatymas</b><small>užsakymams nuo 39 €</small></div>
+      </div>
+      <div class="usp">
+        <div class="usp__icon"><svg><use href="#i-return"/></svg></div>
+        <div><b>30 d. grąžinimas</b><small>be papildomų klausimų</small></div>
+      </div>
+      <div class="usp">
+        <div class="usp__icon"><svg><use href="#i-shield"/></svg></div>
+        <div><b>Originalios prekės</b><small>tiesiai iš oficialių tiekėjų</small></div>
+      </div>
+      <div class="usp">
+        <div class="usp__icon"><svg><use href="#i-briefcase"/></svg></div>
+        <div><b>B2B kainos verslui</b><small>klinikoms, vaistinėms, įstaigoms</small></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== KATEGORIJOS ===== -->
+<section class="section" id="kategorijos">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div>
+        <span class="eyebrow">Kategorijos</span>
+        <h2>Raskite tai, ko reikia jūsų šypsenai</h2>
+      </div>
+      <a class="btn btn--outline" href="parduotuve.html">Visos prekės <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="cat-grid">
+      <a class="cat-card cat-card--big reveal" href="parduotuve.html?cat=elektriniai">
+        <img src="assets/img/13466251.jpg" alt="Elektriniai dantų šepetėliai" loading="lazy">
+        <div class="cat-card__body">
+          <div><h3>Elektriniai šepetėliai</h3><small>48 prekės</small></div>
+          <span class="cat-card__arrow"><svg><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="cat-card reveal" data-delay="1" href="parduotuve.html?cat=pastos">
+        <img src="assets/img/6322805.jpg" alt="Dantų pastos" loading="lazy">
+        <div class="cat-card__body">
+          <div><h3>Dantų pastos</h3><small>156 prekės</small></div>
+          <span class="cat-card__arrow"><svg><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="cat-card reveal" data-delay="2" href="parduotuve.html?cat=tarpdanciu">
+        <img src="assets/img/5938281.jpg" alt="Tarpdančių priežiūra" loading="lazy">
+        <div class="cat-card__body">
+          <div><h3>Tarpdančių priežiūra</h3><small>67 prekės</small></div>
+          <span class="cat-card__arrow"><svg><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="cat-card reveal" data-delay="1" href="parduotuve.html?cat=skalavimo">
+        <img src="assets/img/30551804.jpg" alt="Burnos skalavimo skysčiai" loading="lazy">
+        <div class="cat-card__body">
+          <div><h3>Skalavimo skysčiai</h3><small>38 prekės</small></div>
+          <span class="cat-card__arrow"><svg><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="cat-card reveal" data-delay="2" href="parduotuve.html?cat=balinimas">
+        <img src="assets/img/6627284.jpg" alt="Dantų balinimas" loading="lazy">
+        <div class="cat-card__body">
+          <div><h3>Balinimas</h3><small>31 prekė</small></div>
+          <span class="cat-card__arrow"><svg><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="cat-card reveal" data-delay="3" href="parduotuve.html?cat=vaikams">
+        <img src="assets/img/10566139.jpg" alt="Burnos priežiūra vaikams" loading="lazy">
+        <div class="cat-card__body">
+          <div><h3>Vaikams</h3><small>52 prekės</small></div>
+          <span class="cat-card__arrow"><svg><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== POPULIARIOS PREKĖS ===== -->
+<section class="section section--soft" id="prekes">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div>
+        <span class="eyebrow">Prekės</span>
+        <h2>Šią savaitę renkasi dažniausiai</h2>
+      </div>
+      <div class="pill-tabs" data-featured-tabs>
+        <button class="pill is-active" data-filter="all" type="button">Populiariausios</button>
+        <button class="pill" data-filter="naujiena" type="button">Naujienos</button>
+        <button class="pill" data-filter="akcija" type="button">Akcijos</button>
+      </div>
+    </div>
+    <div class="prod-grid" data-featured-grid>
+
+      <article class="prod-card reveal" data-tags="top">
+        <div class="prod-card__media">
+          <img class="main" src="assets/img/13466251.jpg" alt="Curaprox CS 5460 dantų šepetėlis" loading="lazy">
+          <img class="alt" src="assets/img/5622235.jpg" alt="" loading="lazy">
+          <div class="prod-card__badges"><span class="badge badge--top">Top</span></div>
+          <button class="prod-card__wish" type="button" data-wish aria-label="Į mėgstamas"><svg><use href="#i-heart"/></svg></button>
+          <div class="prod-card__quick"><button class="btn btn--primary" type="button" data-add>Į krepšelį</button></div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Curaprox</span>
+          <h3 class="prod-card__title"><a href="preke.html">CS 5460 Ultra Soft dantų šepetėlis</a></h3>
+          <div class="prod-card__meta"><span class="stars" style="--r:98%">★★★★★</span><span>(214)</span></div>
+          <div class="prod-card__price price"><span class="price__new">6,90 €</span></div>
+        </div>
+      </article>
+
+      <article class="prod-card reveal" data-delay="1" data-tags="akcija top">
+        <div class="prod-card__media">
+          <img class="main" src="assets/img/6502341.jpg" alt="Philips Sonicare elektrinis šepetėlis" loading="lazy">
+          <img class="alt" src="assets/img/19976568.jpg" alt="" loading="lazy">
+          <div class="prod-card__badges"><span class="badge badge--sale">–18 %</span></div>
+          <button class="prod-card__wish" type="button" data-wish aria-label="Į mėgstamas"><svg><use href="#i-heart"/></svg></button>
+          <div class="prod-card__quick"><button class="btn btn--primary" type="button" data-add>Į krepšelį</button></div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Philips</span>
+          <h3 class="prod-card__title"><a href="preke.html">Sonicare ProtectiveClean 4300</a></h3>
+          <div class="prod-card__meta"><span class="stars" style="--r:96%">★★★★★</span><span>(96)</span></div>
+          <div class="prod-card__price price"><span class="price__new is-sale">89,99 €</span><span class="price__old">109,99 €</span></div>
+        </div>
+      </article>
+
+      <article class="prod-card reveal" data-delay="2" data-tags="naujiena">
+        <div class="prod-card__media">
+          <img class="main" src="assets/img/6322805.jpg" alt="Curaprox Be You dantų pasta" loading="lazy">
+          <img class="alt" src="assets/img/7298650.jpg" alt="" loading="lazy">
+          <div class="prod-card__badges"><span class="badge badge--new">Nauja</span></div>
+          <button class="prod-card__wish" type="button" data-wish aria-label="Į mėgstamas"><svg><use href="#i-heart"/></svg></button>
+          <div class="prod-card__quick"><button class="btn btn--primary" type="button" data-add>Į krepšelį</button></div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Curaprox</span>
+          <h3 class="prod-card__title"><a href="preke.html">Be You balinamoji pasta, 90 ml</a></h3>
+          <div class="prod-card__meta"><span class="stars" style="--r:96%">★★★★★</span><span>(167)</span></div>
+          <div class="prod-card__price price"><span class="price__new">8,50 €</span></div>
+        </div>
+      </article>
+
+      <article class="prod-card reveal" data-delay="3" data-tags="top">
+        <div class="prod-card__media">
+          <img class="main" src="assets/img/5938281.jpg" alt="TePe tarpdančių šepetėliai" loading="lazy">
+          <img class="alt" src="assets/img/3958092.jpg" alt="" loading="lazy">
+          <button class="prod-card__wish" type="button" data-wish aria-label="Į mėgstamas"><svg><use href="#i-heart"/></svg></button>
+          <div class="prod-card__quick"><button class="btn btn--primary" type="button" data-add>Į krepšelį</button></div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">TePe</span>
+          <h3 class="prod-card__title"><a href="preke.html">Tarpdančių šepetėlių rinkinys, 8 vnt.</a></h3>
+          <div class="prod-card__meta"><span class="stars" style="--r:94%">★★★★★</span><span>(183)</span></div>
+          <div class="prod-card__price price"><span class="price__new">5,40 €</span></div>
+        </div>
+      </article>
+
+      <article class="prod-card reveal" data-tags="akcija">
+        <div class="prod-card__media">
+          <img class="main" src="assets/img/30551804.jpg" alt="Listerine skalavimo skystis" loading="lazy">
+          <img class="alt" src="assets/img/5622235.jpg" alt="" loading="lazy">
+          <div class="prod-card__badges"><span class="badge badge--sale">–20 %</span></div>
+          <button class="prod-card__wish" type="button" data-wish aria-label="Į mėgstamas"><svg><use href="#i-heart"/></svg></button>
+          <div class="prod-card__quick"><button class="btn btn--primary" type="button" data-add>Į krepšelį</button></div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Listerine</span>
+          <h3 class="prod-card__title"><a href="preke.html">Total Care skalavimo skystis, 500 ml</a></h3>
+          <div class="prod-card__meta"><span class="stars" style="--r:92%">★★★★★</span><span>(241)</span></div>
+          <div class="prod-card__price price"><span class="price__new is-sale">4,79 €</span><span class="price__old">5,99 €</span></div>
+        </div>
+      </article>
+
+      <article class="prod-card reveal" data-delay="1" data-tags="akcija">
+        <div class="prod-card__media">
+          <img class="main" src="assets/img/3958092.jpg" alt="Waterpik burnos irigatorius" loading="lazy">
+          <img class="alt" src="assets/img/19976568.jpg" alt="" loading="lazy">
+          <div class="prod-card__badges"><span class="badge badge--sale">–17 %</span></div>
+          <button class="prod-card__wish" type="button" data-wish aria-label="Į mėgstamas"><svg><use href="#i-heart"/></svg></button>
+          <div class="prod-card__quick"><button class="btn btn--primary" type="button" data-add>Į krepšelį</button></div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Waterpik</span>
+          <h3 class="prod-card__title"><a href="preke.html">WP-660 burnos irigatorius</a></h3>
+          <div class="prod-card__meta"><span class="stars" style="--r:96%">★★★★★</span><span>(74)</span></div>
+          <div class="prod-card__price price"><span class="price__new is-sale">74,90 €</span><span class="price__old">89,90 €</span></div>
+        </div>
+      </article>
+
+      <article class="prod-card reveal" data-delay="2" data-tags="naujiena">
+        <div class="prod-card__media">
+          <img class="main" src="assets/img/6627284.jpg" alt="Curaprox Black is White pasta" loading="lazy">
+          <img class="alt" src="assets/img/6322805.jpg" alt="" loading="lazy">
+          <div class="prod-card__badges"><span class="badge badge--new">Nauja</span></div>
+          <button class="prod-card__wish" type="button" data-wish aria-label="Į mėgstamas"><svg><use href="#i-heart"/></svg></button>
+          <div class="prod-card__quick"><button class="btn btn--primary" type="button" data-add>Į krepšelį</button></div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Curaprox</span>
+          <h3 class="prod-card__title"><a href="preke.html">„Black is White“ balinamoji pasta</a></h3>
+          <div class="prod-card__meta"><span class="stars" style="--r:92%">★★★★★</span><span>(73)</span></div>
+          <div class="prod-card__price price"><span class="price__new">16,90 €</span></div>
+        </div>
+      </article>
+
+      <article class="prod-card reveal" data-delay="3" data-tags="top naujiena">
+        <div class="prod-card__media">
+          <img class="main" src="assets/img/10566139.jpg" alt="Splat Kids pasta vaikams" loading="lazy">
+          <img class="alt" src="assets/img/13466251.jpg" alt="" loading="lazy">
+          <button class="prod-card__wish" type="button" data-wish aria-label="Į mėgstamas"><svg><use href="#i-heart"/></svg></button>
+          <div class="prod-card__quick"><button class="btn btn--primary" type="button" data-add>Į krepšelį</button></div>
+        </div>
+        <div class="prod-card__body">
+          <span class="prod-card__brand">Splat</span>
+          <h3 class="prod-card__title"><a href="preke.html">Kids gelinė pasta vaikams 2–6 m.</a></h3>
+          <div class="prod-card__meta"><span class="stars" style="--r:94%">★★★★★</span><span>(129)</span></div>
+          <div class="prod-card__price price"><span class="price__new">3,99 €</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARALLAX AKCIJA ===== -->
+<section class="promo">
+  <div class="promo__bg" data-parallax data-speed="0.16">
+    <img src="assets/img/5622235.jpg" alt="" loading="lazy">
+  </div>
+  <div class="container">
+    <div class="promo__inner">
+      <span class="promo__chip reveal"><svg width="14" height="14"><use href="#i-gift"/></svg>Perki X — gauni Y</span>
+      <h2 class="reveal" data-delay="1">Perkant irigatorių — skalavimo skystis <em>dovanų</em></h2>
+      <p class="reveal" data-delay="2">Akcija taikoma visiems Waterpik ir Oclean irigatoriams. Dovana pridedama automatiškai krepšelyje — nieko papildomai daryti nereikia.</p>
+      <div class="promo__cta reveal" data-delay="3">
+        <a class="btn btn--light btn--lg" href="parduotuve.html?f=akcija">Į akcijos prekes <svg><use href="#i-arrow"/></svg></a>
+        <span class="promo__deadline">Akcija galioja iki <b>spalio 15 d.</b></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KODĖL DENTORA ===== -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="split__media reveal">
+        <div class="img-parallax">
+          <img src="assets/img/4269682.jpg" alt="Burnos higienos specialistė" data-parallax data-speed="0.1" loading="lazy">
+        </div>
+        <div class="split__badge"><b>12+</b><small>metų patirtis</small></div>
+        <div class="float-card float-card--review">
+          <span class="stars" style="--r:100%">★★★★★</span>
+          <p>„Konsultantė padėjo išsirinkti šepetėlį jautriems dantims.“</p>
+          <span>Tomas, Kaunas</span>
+        </div>
+      </div>
+      <div class="reveal" data-delay="1">
+        <span class="eyebrow">Kodėl Dentora</span>
+        <h2>Atrenkame tik tai, ką rekomenduotume savo šeimai</h2>
+        <ul class="checklist">
+          <li><svg><use href="#i-check"/></svg><span>Asortimentą atrenka burnos higienos specialistai<small>Kiekviena prekė — patikrinta ir sertifikuota ES rinkai.</small></span></li>
+          <li><svg><use href="#i-check"/></svg><span>Užsakymai išsiunčiami per 24 valandas<small>Omniva, LP Express, DPD ir Venipak — kaip jums patogiau.</small></span></li>
+          <li><svg><use href="#i-check"/></svg><span>Lojalumo taškai už kiekvieną pirkinį<small>Sukauptus taškus panaudokite kitiems užsakymams.</small></span></li>
+        </ul>
+        <a class="btn btn--primary" href="parduotuve.html">Rinktis prekes <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><div class="stat__num"><span data-count="24000">0</span><i>+</i></div><small>Įvykdytų užsakymų</small></div>
+      <div class="stat reveal" data-delay="1"><div class="stat__num"><span data-count="1000">0</span><i>+</i></div><small>Prekių asortimente</small></div>
+      <div class="stat reveal" data-delay="2"><div class="stat__num">4,9</div><small>Vidutinis įvertinimas</small></div>
+      <div class="stat reveal" data-delay="3"><div class="stat__num"><span data-count="320">0</span><i>+</i></div><small>B2B partnerių</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PREKĖS ŽENKLAI ===== -->
+<section class="brands">
+  <p class="brands__label">Oficialiai atstovaujami prekių ženklai</p>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="brand-mark">CURAPROX</span><span class="brand-mark">PHILIPS</span><span class="brand-mark">ORAL-B</span><span class="brand-mark">TePe</span><span class="brand-mark">WATERPIK</span><span class="brand-mark">GUM</span><span class="brand-mark">SPLAT</span><span class="brand-mark">JORDAN</span><span class="brand-mark">OCLEAN</span><span class="brand-mark">LISTERINE</span>
+    </div>
+    <div class="marquee__track">
+      <span class="brand-mark">CURAPROX</span><span class="brand-mark">PHILIPS</span><span class="brand-mark">ORAL-B</span><span class="brand-mark">TePe</span><span class="brand-mark">WATERPIK</span><span class="brand-mark">GUM</span><span class="brand-mark">SPLAT</span><span class="brand-mark">JORDAN</span><span class="brand-mark">OCLEAN</span><span class="brand-mark">LISTERINE</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ATSILIEPIMAI ===== -->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Atsiliepimai</span>
+      <h2>Ką sako mūsų klientai</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <span class="stars" style="--r:100%">★★★★★</span>
+        <p>„Pagaliau parduotuvė, kur filtrai tikrai veikia — per minutę radau šepetėlį jautrioms dantenoms. Pristatymas kitą dieną.“</p>
+        <div class="testi-card__meta"><span class="avatar">RS</span><div><b>Rūta S.</b><small>Vilnius · patvirtintas pirkimas</small></div></div>
+      </div>
+      <div class="testi-card reveal" data-delay="1">
+        <span class="stars" style="--r:100%">★★★★★</span>
+        <p>„Užsakome priemones visai odontologijos klinikai. B2B kainos ir sąskaitos išrašomos automatiškai — sutaupome daug laiko.“</p>
+        <div class="testi-card__meta"><span class="avatar">DK</span><div><b>Dr. Karolina</b><small>Klinika „Šypsena+“ · B2B klientas</small></div></div>
+      </div>
+      <div class="testi-card reveal" data-delay="2">
+        <span class="stars" style="--r:90%">★★★★★</span>
+        <p>„Priminė el. paštu, kai vėl atsirado vaikiška pasta, kurios niekur negalėjau rasti. Toks aptarnavimas — retenybė.“</p>
+        <div class="testi-card__meta"><span class="avatar">MB</span><div><b>Marius B.</b><small>Klaipėda · patvirtintas pirkimas</small></div></div>
+      </div>
+    </div>
+    <div class="rating-summary reveal">
+      <span class="stars" style="--r:96%">★★★★★</span>
+      <span><b>4,9</b> iš 5 — pagal 2 400+ įvertinimų</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PATARIMAI ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div>
+        <span class="eyebrow">Patarimai</span>
+        <h2>Sveikos šypsenos akademija</h2>
+      </div>
+      <a class="btn btn--outline" href="#" data-demo>Visi straipsniai <svg><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card reveal">
+        <div class="blog-card__img"><img src="assets/img/13466251.jpg" alt="Dantų šepetėliai" loading="lazy"></div>
+        <div class="blog-card__body">
+          <span class="blog-card__tag">Kasdienė priežiūra</span>
+          <h3><a href="#" data-demo>Kaip dažnai iš tiesų reikia keisti dantų šepetėlį?</a></h3>
+          <div class="blog-card__meta">2026-09-18 · 4 min. skaitymo</div>
+        </div>
+      </article>
+      <article class="blog-card reveal" data-delay="1">
+        <div class="blog-card__img"><img src="assets/img/30551804.jpg" alt="Burnos skalavimo skystis" loading="lazy"></div>
+        <div class="blog-card__body">
+          <span class="blog-card__tag">Gidas</span>
+          <h3><a href="#" data-demo>Irigatorius: ar tikrai jo reikia ir kaip išsirinkti?</a></h3>
+          <div class="blog-card__meta">2026-09-10 · 6 min. skaitymo</div>
+        </div>
+      </article>
+      <article class="blog-card reveal" data-delay="2">
+        <div class="blog-card__img"><img src="assets/img/39598425.jpg" alt="Šypsena" loading="lazy"></div>
+        <div class="blog-card__body">
+          <span class="blog-card__tag">Ekspertai pataria</span>
+          <h3><a href="#" data-demo>5 dažniausios klaidos, kurias darome valydami dantis</a></h3>
+          <div class="blog-card__meta">2026-09-02 · 5 min. skaitymo</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NAUJIENLAIŠKIS ===== -->
+<section class="newsletter">
+  <div class="container newsletter__inner">
+    <div class="reveal">
+      <span class="eyebrow" style="color:#7FE0DA">Naujienlaiškis</span>
+      <h2>Gaukite <em>–10 %</em> pirmam užsakymui</h2>
+      <p>Prenumeruokite ir pirmieji sužinokite apie akcijas, naujienas bei specialistų patarimus. Jokio brukalo — tik naudinga informacija.</p>
+    </div>
+    <div class="reveal" data-delay="1">
+      <form data-form="newsletter" novalidate>
+        <input type="email" name="email" id="nl-email" placeholder="jusu@pastas.lt" required aria-label="El. pašto adresas">
+        <button class="btn btn--accent" type="submit">Prenumeruoti</button>
+      </form>
+      <div class="form-success" hidden><svg><use href="#i-check"/></svg><div><b>Ačiū! Patikrinkite el. paštą.</b><br>Nuolaidos kodas jau keliauja pas jus.</div></div>
+      <p class="newsletter__consent">Paspausdami „Prenumeruoti“ sutinkate su privatumo politika. Atsisakyti galite bet kada.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="logo" href="./"><svg class="logo__mark" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="7" fill="#7FE0DA"/><path d="M12 4.6c-1.9 0-2.3 1.1-3.8 1.1S5.3 6.8 5.3 9c0 3 1.5 4.5 2.2 8.2.3 1.3 1.6 1.4 1.9 0 .4-1.8.7-3 2.6-3s2.2 1.2 2.6 3c.3 1.4 1.6 1.3 1.9 0C17.2 13.5 18.7 12 18.7 9c0-2.2-1.4-3.3-2.9-3.3S13.9 4.6 12 4.6z" fill="#07272E"/></svg><span>dentora<i>.</i></span></a>
+        <p>Burnos ir dantų priežiūros priemonių el. parduotuvė. Originalios prekės iš oficialių tiekėjų — namams ir verslui.</p>
+        <div class="socials">
+          <a href="#" data-demo aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+          <a href="#" data-demo aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Parduotuvė</h4>
+        <ul>
+          <li><a href="parduotuve.html?cat=elektriniai">Elektriniai šepetėliai</a></li>
+          <li><a href="parduotuve.html?cat=pastos">Dantų pastos</a></li>
+          <li><a href="parduotuve.html?cat=tarpdanciu">Tarpdančių priežiūra</a></li>
+          <li><a href="parduotuve.html?cat=vaikams">Vaikams</a></li>
+          <li><a href="parduotuve.html?f=akcija">Akcijos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Pagalba</h4>
+        <ul>
+          <li><a href="#" data-demo>Pristatymas ir atsiėmimas</a></li>
+          <li><a href="#" data-demo>Grąžinimai</a></li>
+          <li><a href="#" data-demo>Dovanų kuponai</a></li>
+          <li><a href="#" data-demo>D.U.K.</a></li>
+          <li><a href="b2b.html">Verslo klientams</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontaktai</h4>
+        <ul class="footer__contact">
+          <li><svg><use href="#i-phone"/></svg><span>+370 678 59 04<br><small style="color:#7C9899">I–V 9:00–18:00</small></span></li>
+          <li><svg><use href="#i-mail"/></svg><span>info@dentora.lt</span></li>
+          <li><svg><use href="#i-pin"/></svg><span>Verslo g. 1, Vilnius<br><small style="color:#7C9899">Atsiėmimo punktas</small></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Dentora · Demo dizainas · Nuotraukos ir video — Pexels</span>
+      <div class="badge-row">
+        <span class="pill-badge">VISA</span><span class="pill-badge">Mastercard</span><span class="pill-badge">Apple Pay</span><span class="pill-badge">G Pay</span><span class="pill-badge">Paysera</span><span class="pill-badge">kevin.</span>
+      </div>
+      <div class="badge-row">
+        <span class="pill-badge">Omniva</span><span class="pill-badge">LP Express</span><span class="pill-badge">DPD</span><span class="pill-badge">Venipak</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== OVERLAY'AI ===== -->
+<div class="backdrop" data-backdrop></div>
+
+<div class="search-overlay" data-panel="search" role="dialog" aria-label="Paieška">
+  <div class="search-box">
+    <form data-form="search">
+      <svg width="19" height="19" style="color:#93A9AB"><use href="#i-search"/></svg>
+      <input type="search" placeholder="Ieškoti prekių, kategorijų, prekės ženklų…" aria-label="Paieška" id="search-input">
+      <button class="btn btn--primary btn--sm" type="submit">Ieškoti</button>
+    </form>
+    <div class="search-box__meta">Populiariausios užklausos:</div>
+    <div class="search-box__tags">
+      <button type="button" data-search-tag>elektrinis šepetėlis</button>
+      <button type="button" data-search-tag>curaprox</button>
+      <button type="button" data-search-tag>balinimo juostelės</button>
+      <button type="button" data-search-tag>irigatorius</button>
+      <button type="button" data-search-tag>pasta be fluoro</button>
+    </div>
+    <div class="search-box__note"><svg><use href="#i-bolt"/></svg>Gyvoje svetainėje rezultatai rodomi realiu laiku (AJAX paieška su prekių kortelėmis).</div>
+  </div>
+</div>
+
+<aside class="minicart" data-panel="cart" role="dialog" aria-label="Krepšelis">
+  <div class="minicart__head">
+    <h3>Krepšelis <span class="muted" data-cart-qty>(3)</span></h3>
+    <button class="icon-btn" type="button" data-close aria-label="Uždaryti"><svg><use href="#i-x"/></svg></button>
+  </div>
+  <div class="freeship">
+    <span data-freeship-label>Iki <strong>nemokamo pristatymo</strong> liko <strong data-freeship-left>19,70 €</strong></span>
+    <div class="freeship__bar"><div class="freeship__fill" data-freeship-fill></div></div>
+  </div>
+  <div class="minicart__items" data-cart-items>
+    <div class="cart-item" data-price="8.50">
+      <img src="assets/img/6322805.jpg" alt="">
+      <div class="cart-item__body">
+        <p class="cart-item__title">Curaprox Be You balinamoji pasta</p>
+        <p class="cart-item__meta">90 ml · Persikų skonio</p>
+        <div class="cart-item__row">
+          <span class="qty"><button type="button" data-qty="-1" aria-label="Mažiau">−</button><input type="text" value="1" inputmode="numeric" aria-label="Kiekis"><button type="button" data-qty="1" aria-label="Daugiau">+</button></span>
+          <span class="cart-item__price">8,50 €</span>
+          <button class="cart-item__remove" type="button" aria-label="Pašalinti"><svg><use href="#i-x"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-item" data-price="5.40">
+      <img src="assets/img/5938281.jpg" alt="">
+      <div class="cart-item__body">
+        <p class="cart-item__title">TePe tarpdančių šepetėlių rinkinys</p>
+        <p class="cart-item__meta">8 vnt. · Mišrūs dydžiai</p>
+        <div class="cart-item__row">
+          <span class="qty"><button type="button" data-qty="-1" aria-label="Mažiau">−</button><input type="text" value="2" inputmode="numeric" aria-label="Kiekis"><button type="button" data-qty="1" aria-label="Daugiau">+</button></span>
+          <span class="cart-item__price">10,80 €</span>
+          <button class="cart-item__remove" type="button" aria-label="Pašalinti"><svg><use href="#i-x"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="minicart__foot">
+    <div class="minicart__total"><span>Tarpinė suma</span><span data-cart-total>19,30 €</span></div>
+    <button class="btn btn--accent btn--block" type="button" data-demo>Apmokėti</button>
+    <button class="btn btn--outline btn--block" type="button" data-close>Tęsti apsipirkimą</button>
+    <p class="minicart__note">Demo krepšelis — pristatymo kaina apskaičiuojama apmokėjimo žingsnyje.</p>
+  </div>
+</aside>
+
+<nav class="mobile-nav" data-panel="nav" aria-label="Mobilus meniu">
+  <div class="mobile-nav__head">
+    <span class="logo" style="font-size:21px"><svg class="logo__mark" style="width:30px;height:30px" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="7" fill="#0E4A54"/><path d="M12 4.6c-1.9 0-2.3 1.1-3.8 1.1S5.3 6.8 5.3 9c0 3 1.5 4.5 2.2 8.2.3 1.3 1.6 1.4 1.9 0 .4-1.8.7-3 2.6-3s2.2 1.2 2.6 3c.3 1.4 1.6 1.3 1.9 0C17.2 13.5 18.7 12 18.7 9c0-2.2-1.4-3.3-2.9-3.3S13.9 4.6 12 4.6z" fill="#7FE0DA"/></svg><span>dentora<i>.</i></span></span>
+    <button class="icon-btn" type="button" data-close aria-label="Uždaryti"><svg><use href="#i-x"/></svg></button>
+  </div>
+  <a href="./">Pradžia</a>
+  <a href="parduotuve.html">Parduotuvė</a>
+  <a href="parduotuve.html?cat=elektriniai">Elektriniai šepetėliai <small>48</small></a>
+  <a href="parduotuve.html?cat=pastos">Dantų pastos <small>156</small></a>
+  <a href="parduotuve.html?cat=vaikams">Vaikams <small>52</small></a>
+  <a href="parduotuve.html?f=akcija">Akcijos</a>
+  <a href="b2b.html">Verslui (B2B)</a>
+  <a class="btn btn--primary" href="parduotuve.html">Apžiūrėti parduotuvę</a>
+</nav>
+
+<div class="cookiebar" data-cookiebar>
+  <div data-cookie-view="main">
+    <h4><svg><use href="#i-cookie"/></svg>Slapukų nustatymai</h4>
+    <p>Naudojame slapukus svetainės veikimui, analitikai ir rinkodarai. Sekimas įjungiamas tik gavus jūsų sutikimą (Google Consent Mode v2).</p>
+    <div class="cookiebar__btns">
+      <button class="btn btn--primary" type="button" data-cookie="all">Sutikti su visais</button>
+      <button class="btn btn--outline" type="button" data-cookie="necessary">Tik būtini</button>
+      <button class="cookiebar__settings" type="button" data-cookie-settings>Nustatymai</button>
+    </div>
+  </div>
+  <div data-cookie-view="settings" hidden>
+    <h4><svg><use href="#i-cookie"/></svg>Pasirinkite slapukus</h4>
+    <div class="cookie-toggles">
+      <div class="cookie-toggle"><div><b>Būtini</b><small>Svetainės veikimui — visada aktyvūs</small></div><label class="switch"><input type="checkbox" checked disabled><i></i></label></div>
+      <div class="cookie-toggle"><div><b>Analitiniai</b><small>Google Analytics 4</small></div><label class="switch"><input type="checkbox" id="ck-analytics"><i></i></label></div>
+      <div class="cookie-toggle"><div><b>Rinkodaros</b><small>Meta Pixel, Google Ads</small></div><label class="switch"><input type="checkbox" id="ck-marketing"><i></i></label></div>
+    </div>
+    <div class="cookiebar__btns">
+      <button class="btn btn--primary" type="button" data-cookie="custom">Išsaugoti pasirinkimą</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast-stack" data-toasts aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

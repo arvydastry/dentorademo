@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dentora verslui — B2B</title>
+<meta name="description" content="Demo dizainas: B2B puslapis — kainų grupės verslo klientams, automatinės sąskaitos LT/EN/PL, asmeninis vadybininkas.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230E4A54'/%3E%3Cpath d='M12 4.6c-1.9 0-2.3 1.1-3.8 1.1S5.3 6.8 5.3 9c0 3 1.5 4.5 2.2 8.2.3 1.3 1.6 1.4 1.9 0 .4-1.8.7-3 2.6-3s2.2 1.2 2.6 3c.3 1.4 1.6 1.3 1.9 0C17.2 13.5 18.7 12 18.7 9c0-2.2-1.4-3.3-2.9-3.3S13.9 4.6 12 4.6z' fill='%237FE0DA'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+    <symbol id="i-cookie" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-sync" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+    <symbol id="i-percent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  </defs>
+</svg>
+
+<!-- ===== ANTRAŠTĖ ===== -->
+<header class="site-header site-header--overlay" id="siteHeader">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__group">
+        <a href="#" data-demo><svg><use href="#i-phone"/></svg><span>+370 678 59 04</span></a>
+        <a href="#" data-demo class="topbar__hide-m"><svg><use href="#i-mail"/></svg><span>info@dentora.lt</span></a>
+      </div>
+      <div class="topbar__promo topbar__hide-m">Nemokamas pristatymas nuo 39 € · –10 % pirmam užsakymui su kodu <b>LABAS10</b></div>
+      <div class="topbar__group">
+        <a href="b2b.html" class="topbar__hide-m">Verslui (B2B)</a>
+        <div class="lang" data-lang>
+          <button class="lang__btn" type="button" aria-haspopup="true"><svg width="13" height="13"><use href="#i-globe"/></svg>LT · €<svg width="11" height="11"><use href="#i-chev"/></svg></button>
+          <div class="lang__menu">
+            <button type="button" class="is-active">🇱🇹 Lietuvių</button>
+            <button type="button" data-lang-demo>🇬🇧 English</button>
+            <button type="button" data-lang-demo>🇵🇱 Polski</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-inner">
+      <a class="logo" href="./" aria-label="Dentora — pradžia">
+        <svg class="logo__mark" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="7" fill="#0E4A54"/><path d="M12 4.6c-1.9 0-2.3 1.1-3.8 1.1S5.3 6.8 5.3 9c0 3 1.5 4.5 2.2 8.2.3 1.3 1.6 1.4 1.9 0 .4-1.8.7-3 2.6-3s2.2 1.2 2.6 3c.3 1.4 1.6 1.3 1.9 0C17.2 13.5 18.7 12 18.7 9c0-2.2-1.4-3.3-2.9-3.3S13.9 4.6 12 4.6z" fill="#7FE0DA"/></svg>
+        <span>dentora<i>.</i></span>
+      </a>
+      <nav class="nav" aria-label="Pagrindinis meniu">
+        <a class="nav__link" href="./">Pradžia</a>
+        <a class="nav__link" href="parduotuve.html">Parduotuvė</a>
+        <div class="nav__item">
+          <a class="nav__link" href="parduotuve.html">Kategorijos <svg><use href="#i-chev"/></svg></a>
+          <div class="nav__sub">
+            <a href="parduotuve.html?cat=elektriniai">Elektriniai šepetėliai <small>48</small></a>
+            <a href="parduotuve.html?cat=pastos">Dantų pastos <small>156</small></a>
+            <a href="parduotuve.html?cat=tarpdanciu">Tarpdančių priežiūra <small>67</small></a>
+            <a href="parduotuve.html?cat=skalavimo">Skalavimo skysčiai <small>38</small></a>
+            <a href="parduotuve.html?cat=balinimas">Balinimas <small>31</small></a>
+            <a href="parduotuve.html?cat=vaikams">Vaikams <small>52</small></a>
+            <a href="parduotuve.html" class="nav__sub-all">Visos kategorijos <svg width="14" height="14"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <a class="nav__link" href="parduotuve.html?f=akcija">Akcijos</a>
+        <a class="nav__link" href="#" data-demo>Patarimai</a>
+        <a class="nav__link is-active" href="b2b.html">B2B</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" data-open="search" aria-label="Paieška"><svg><use href="#i-search"/></svg></button>
+        <button class="icon-btn" type="button" data-demo aria-label="Paskyra"><svg><use href="#i-user"/></svg></button>
+        <button class="icon-btn" type="button" data-count="3" data-wish-count data-demo aria-label="Mėgstamos prekės"><svg><use href="#i-heart"/></svg></button>
+        <button class="icon-btn" type="button" data-count="3" data-cart-count data-open="cart" aria-label="Krepšelis"><svg><use href="#i-cart"/></svg></button>
+        <button class="icon-btn burger" type="button" data-open="nav" aria-label="Meniu"><svg><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== PUSLAPIO HERO ===== -->
+<section class="page-hero">
+  <div class="page-hero__bg" data-parallax data-speed="0.18">
+    <img src="assets/img/4269265.jpg" alt="">
+  </div>
+  <div class="container">
+    <nav class="crumbs" aria-label="Naršymo kelias">
+      <a href="./">Pradžia</a><svg><use href="#i-chev" transform="rotate(-90 12 12)"/></svg><span class="current">Verslui</span>
+    </nav>
+    <span class="hero__eyebrow"><span class="dot"></span>Dentora Pro</span>
+    <h1>Patikimas partneris jūsų <em style="font-style:normal;color:#7FE0DA">verslui</em></h1>
+    <p>Aprūpiname odontologijos klinikas, vaistines, grožio salonus ir įstaigas burnos priežiūros priemonėmis. Specialios kainos, atidėti mokėjimai ir asmeninis vadybininkas.</p>
+    <div class="hero__cta" style="margin-top:30px">
+      <a class="btn btn--accent btn--lg" href="#b2b-forma">Gauti pasiūlymą <svg><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--ghost btn--lg" href="#" data-demo>B2B prisijungimas</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NAUDOS ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">Kodėl verta</span>
+      <h2>Viskas, ko reikia patogiam didmeniniam pirkimui</h2>
+    </div>
+    <div class="benefit-grid">
+      <div class="benefit-card reveal">
+        <div class="usp__icon"><svg><use href="#i-percent"/></svg></div>
+        <h3>B2B kainų grupės</h3>
+        <p>Individualios nuolaidos pagal apyvartą — prisijungę matote savo kainas visame kataloge.</p>
+      </div>
+      <div class="benefit-card reveal" data-delay="1">
+        <div class="usp__icon"><svg><use href="#i-doc"/></svg></div>
+        <h3>Sąskaitos automatiškai</h3>
+        <p>Sąskaita faktūra sugeneruojama užsakymo kalba — lietuvių, anglų arba lenkų — ir iškart išsiunčiama buhalterijai.</p>
+      </div>
+      <div class="benefit-card reveal" data-delay="2">
+        <div class="usp__icon"><svg><use href="#i-clock"/></svg></div>
+        <h3>Atidėti mokėjimai</h3>
+        <p>Patikimiems partneriams — apmokėjimas per 14 arba 30 dienų pagal sutartį.</p>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="usp__icon"><svg><use href="#i-sync"/></svg></div>
+        <h3>Likučiai realiu laiku</h3>
+        <p>Sandėlio likučiai sinchronizuojami su ERP — matote tik tai, ką tikrai galime išsiųsti šiandien.</p>
+      </div>
+      <div class="benefit-card reveal" data-delay="1">
+        <div class="usp__icon"><svg><use href="#i-users"/></svg></div>
+        <h3>Asmeninis vadybininkas</h3>
+        <p>Vienas kontaktas visiems klausimams — nuo asortimento iki grąžinimų. Atsakome per 4 darbo valandas.</p>
+      </div>
+      <div class="benefit-card reveal" data-delay="2">
+        <div class="usp__icon"><svg><use href="#i-truck"/></svg></div>
+        <h3>Pristatymas visoje ES</h3>
+        <p>Kasdieniai išsiuntimai į Lietuvą, Latviją, Estiją ir Lenkiją. Didesniems užsakymams — paletės.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ŽINGSNIAI ===== -->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Kaip pradėti</span>
+      <h2>Trys žingsniai iki B2B kainų</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step__num">1</div>
+        <h3>Užpildykite užklausą</h3>
+        <p>Nurodykite įmonės rekvizitus ir apytikslius mėnesio poreikius — užtruksite vos minutę.</p>
+      </div>
+      <div class="step reveal" data-delay="1">
+        <div class="step__num">2</div>
+        <h3>Patvirtiname per 24 val.</h3>
+        <p>Vadybininkas priskiria kainų grupę, sutariame dėl atsiskaitymo sąlygų ir pristatymo grafiko.</p>
+      </div>
+      <div class="step reveal" data-delay="2">
+        <div class="step__num">3</div>
+        <h3>Užsakote savitarnoje</h3>
+        <p>Prisijungę matote savo kainas, užsakymų istoriją ir sąskaitas vienoje vietoje — 24/7.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CITATA (parallax) ===== -->
+<section class="quote-band">
+  <div class="quote-band__bg" data-parallax data-speed="0.16">
+    <img src="assets/img/3958092.jpg" alt="">
+  </div>
+  <div class="container">
+    <div class="quote-band__inner">
+      <span class="stars reveal" style="--r:100%;font-size:18px">★★★★★</span>
+      <blockquote class="reveal" data-delay="1">„Perėjome pas Dentora prieš metus — <em>užsakymai užtrunka dvigubai trumpiau</em>, o sąskaitos į buhalteriją atkeliauja pačios.“</blockquote>
+      <cite class="reveal" data-delay="2"><b>Dr. Karolina Vaitkuvienė</b>Odontologijos klinika „Šypsena+“, Vilnius</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKAIČIAI ===== -->
+<section class="section">
+  <div class="container">
+    <div class="stats" style="margin-top:0">
+      <div class="stat reveal"><div class="stat__num"><span data-count="320">0</span><i>+</i></div><small>Verslo klientų</small></div>
+      <div class="stat reveal" data-delay="1"><div class="stat__num"><span data-count="24">0</span><i> val.</i></div><small>Užklausos patvirtinimas</small></div>
+      <div class="stat reveal" data-delay="2"><div class="stat__num">LT·EN·PL</div><small>Sąskaitų kalbos</small></div>
+      <div class="stat reveal" data-delay="3"><div class="stat__num"><span data-count="98">0</span><i>%</i></div><small>Užsakymų išsiųsta per 24 val.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== UŽKLAUSOS FORMA ===== -->
+<section class="section section--soft" id="b2b-forma" style="scroll-margin-top:120px">
+  <div class="container">
+    <div class="lead-grid">
+      <div class="reveal">
+        <span class="eyebrow">Užklausa</span>
+        <h2>Gaukite individualų pasiūlymą</h2>
+        <p>Papasakokite apie savo poreikius — per 24 valandas atsiųsime kainų grupę ir bendradarbiavimo sąlygas.</p>
+        <ul class="checklist">
+          <li><svg><use href="#i-check"/></svg><span>Nemokama konsultacija dėl asortimento</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Bandomasis užsakymas be įsipareigojimų</span></li>
+          <li><svg><use href="#i-check"/></svg><span>Kainoraštis XLSX / prekių feed'as integracijai</span></li>
+        </ul>
+        <div class="b2b-note" style="max-width:420px">
+          <svg><use href="#i-phone"/></svg>
+          <span>Skubu? Skambinkite <b>+370 678 59 04</b><br>I–V 9:00–18:00</span>
+        </div>
+      </div>
+      <div class="lead-card reveal" data-delay="1">
+        <form data-form="lead" novalidate>
+          <div class="form-grid">
+            <div class="field"><label for="f-imone">Įmonės pavadinimas <i>*</i></label><input id="f-imone" type="text" placeholder="UAB „Pavyzdys“" required></div>
+            <div class="field"><label for="f-kodas">Įmonės kodas</label><input id="f-kodas" type="text" placeholder="300000000"></div>
+            <div class="field"><label for="f-pastas">El. paštas <i>*</i></label><input id="f-pastas" type="email" placeholder="pirkimai@imone.lt" required></div>
+            <div class="field"><label for="f-tel">Telefonas</label><input id="f-tel" type="tel" placeholder="+370"></div>
+            <div class="field field--full"><label for="f-tipas">Veiklos sritis</label>
+              <select id="f-tipas">
+                <option>Odontologijos klinika</option>
+                <option>Vaistinė</option>
+                <option>Grožio salonas / SPA</option>
+                <option>Prekyba / perpardavimas</option>
+                <option>Kita</option>
+              </select>
+            </div>
+            <div class="field field--full"><label for="f-msg">Žinutė</label><textarea id="f-msg" placeholder="Apytiksliai poreikiai, dominančios kategorijos, kiekiai…"></textarea></div>
+          </div>
+          <p class="form-note" style="margin:14px 0">Pateikdami užklausą sutinkate su privatumo politika.</p>
+          <button class="btn btn--accent btn--lg btn--block" type="submit">Siųsti užklausą <svg><use href="#i-arrow"/></svg></button>
+        </form>
+        <div class="form-success" hidden style="background:var(--aqua-mist);border-color:var(--aqua);color:var(--ink)">
+          <svg style="color:var(--aqua-ink)"><use href="#i-check"/></svg>
+          <div><b>Užklausa gauta!</b><br>Vadybininkas susisieks per 24 darbo valandas. (Demo — užklausa niekur nesiunčiama.)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="logo" href="./"><svg class="logo__mark" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="7" fill="#7FE0DA"/><path d="M12 4.6c-1.9 0-2.3 1.1-3.8 1.1S5.3 6.8 5.3 9c0 3 1.5 4.5 2.2 8.2.3 1.3 1.6 1.4 1.9 0 .4-1.8.7-3 2.6-3s2.2 1.2 2.6 3c.3 1.4 1.6 1.3 1.9 0C17.2 13.5 18.7 12 18.7 9c0-2.2-1.4-3.3-2.9-3.3S13.9 4.6 12 4.6z" fill="#07272E"/></svg><span>dentora<i>.</i></span></a>
+        <p>Burnos ir dantų priežiūros priemonių el. parduotuvė. Originalios prekės iš oficialių tiekėjų — namams ir verslui.</p>
+        <div class="socials">
+          <a href="#" data-demo aria-label="Facebook"><svg><use href="#i-fb"/></svg></a>
+          <a href="#" data-demo aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Parduotuvė</h4>
+        <ul>
+          <li><a href="parduotuve.html?cat=elektriniai">Elektriniai šepetėliai</a></li>
+          <li><a href="parduotuve.html?cat=pastos">Dantų pastos</a></li>
+          <li><a href="parduotuve.html?cat=tarpdanciu">Tarpdančių priežiūra</a></li>
+          <li><a href="parduotuve.html?cat=vaikams">Vaikams</a></li>
+          <li><a href="parduotuve.html?f=akcija">Akcijos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Pagalba</h4>
+        <ul>
+          <li><a href="#" data-demo>Pristatymas ir atsiėmimas</a></li>
+          <li><a href="#" data-demo>Grąžinimai</a></li>
+          <li><a href="#" data-demo>Dovanų kuponai</a></li>
+          <li><a href="#" data-demo>D.U.K.</a></li>
+          <li><a href="b2b.html">Verslo klientams</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontaktai</h4>
+        <ul class="footer__contact">
+          <li><svg><use href="#i-phone"/></svg><span>+370 678 59 04<br><small style="color:#7C9899">I–V 9:00–18:00</small></span></li>
+          <li><svg><use href="#i-mail"/></svg><span>info@dentora.lt</span></li>
+          <li><svg><use href="#i-pin"/></svg><span>Verslo g. 1, Vilnius<br><small style="color:#7C9899">Atsiėmimo punktas</small></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Dentora · Demo dizainas · Nuotraukos ir video — Pexels</span>
+      <div class="badge-row">
+        <span class="pill-badge">VISA</span><span class="pill-badge">Mastercard</span><span class="pill-badge">Apple Pay</span><span class="pill-badge">G Pay</span><span class="pill-badge">Paysera</span><span class="pill-badge">kevin.</span>
+      </div>
+      <div class="badge-row">
+        <span class="pill-badge">Omniva</span><span class="pill-badge">LP Express</span><span class="pill-badge">DPD</span><span class="pill-badge">Venipak</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== OVERLAY'AI ===== -->
+<div class="backdrop" data-backdrop></div>
+
+<div class="search-overlay" data-panel="search" role="dialog" aria-label="Paieška">
+  <div class="search-box">
+    <form data-form="search">
+      <svg width="19" height="19" style="color:#93A9AB"><use href="#i-search"/></svg>
+      <input type="search" placeholder="Ieškoti prekių, kategorijų, prekės ženklų…" aria-label="Paieška" id="search-input">
+      <button class="btn btn--primary btn--sm" type="submit">Ieškoti</button>
+    </form>
+    <div class="search-box__meta">Populiariausios užklausos:</div>
+    <div class="search-box__tags">
+      <button type="button" data-search-tag>elektrinis šepetėlis</button>
+      <button type="button" data-search-tag>curaprox</button>
+      <button type="button" data-search-tag>balinimo juostelės</button>
+      <button type="button" data-search-tag>irigatorius</button>
+      <button type="button" data-search-tag>pasta be fluoro</button>
+    </div>
+    <div class="search-box__note"><svg><use href="#i-bolt"/></svg>Gyvoje svetainėje rezultatai rodomi realiu laiku (AJAX paieška su prekių kortelėmis).</div>
+  </div>
+</div>
+
+<aside class="minicart" data-panel="cart" role="dialog" aria-label="Krepšelis">
+  <div class="minicart__head">
+    <h3>Krepšelis <span class="muted" data-cart-qty>(3)</span></h3>
+    <button class="icon-btn" type="button" data-close aria-label="Uždaryti"><svg><use href="#i-x"/></svg></button>
+  </div>
+  <div class="freeship">
+    <span data-freeship-label>Iki <strong>nemokamo pristatymo</strong> liko <strong data-freeship-left>19,70 €</strong></span>
+    <div class="freeship__bar"><div class="freeship__fill" data-freeship-fill></div></div>
+  </div>
+  <div class="minicart__items" data-cart-items>
+    <div class="cart-item" data-price="8.50">
+      <img src="assets/img/6322805.jpg" alt="">
+      <div class="cart-item__body">
+        <p class="cart-item__title">Curaprox Be You balinamoji pasta</p>
+        <p class="cart-item__meta">90 ml · Persikų skonio</p>
+        <div class="cart-item__row">
+          <span class="qty"><button type="button" data-qty="-1" aria-label="Mažiau">−</button><input type="text" value="1" inputmode="numeric" aria-label="Kiekis"><button type="button" data-qty="1" aria-label="Daugiau">+</button></span>
+          <span class="cart-item__price">8,50 €</span>
+          <button class="cart-item__remove" type="button" aria-label="Pašalinti"><svg><use href="#i-x"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-item" data-price="5.40">
+      <img src="assets/img/5938281.jpg" alt="">
+      <div class="cart-item__body">
+        <p class="cart-item__title">TePe tarpdančių šepetėlių rinkinys</p>
+        <p class="cart-item__meta">8 vnt. · Mišrūs dydžiai</p>
+        <div class="cart-item__row">
+          <span class="qty"><button type="button" data-qty="-1" aria-label="Mažiau">−</button><input type="text" value="2" inputmode="numeric" aria-label="Kiekis"><button type="button" data-qty="1" aria-label="Daugiau">+</button></span>
+          <span class="cart-item__price">10,80 €</span>
+          <button class="cart-item__remove" type="button" aria-label="Pašalinti"><svg><use href="#i-x"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="minicart__foot">
+    <div class="minicart__total"><span>Tarpinė suma</span><span data-cart-total>19,30 €</span></div>
+    <button class="btn btn--accent btn--block" type="button" data-demo>Apmokėti</button>
+    <button class="btn btn--outline btn--block" type="button" data-close>Tęsti apsipirkimą</button>
+    <p class="minicart__note">Demo krepšelis — pristatymo kaina apskaičiuojama apmokėjimo žingsnyje.</p>
+  </div>
+</aside>
+
+<nav class="mobile-nav" data-panel="nav" aria-label="Mobilus meniu">
+  <div class="mobile-nav__head">
+    <span class="logo" style="font-size:21px"><svg class="logo__mark" style="width:30px;height:30px" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="7" fill="#0E4A54"/><path d="M12 4.6c-1.9 0-2.3 1.1-3.8 1.1S5.3 6.8 5.3 9c0 3 1.5 4.5 2.2 8.2.3 1.3 1.6 1.4 1.9 0 .4-1.8.7-3 2.6-3s2.2 1.2 2.6 3c.3 1.4 1.6 1.3 1.9 0C17.2 13.5 18.7 12 18.7 9c0-2.2-1.4-3.3-2.9-3.3S13.9 4.6 12 4.6z" fill="#7FE0DA"/></svg><span>dentora<i>.</i></span></span>
+    <button class="icon-btn" type="button" data-close aria-label="Uždaryti"><svg><use href="#i-x"/></svg></button>
+  </div>
+  <a href="./">Pradžia</a>
+  <a href="parduotuve.html">Parduotuvė</a>
+  <a href="parduotuve.html?cat=elektriniai">Elektriniai šepetėliai <small>48</small></a>
+  <a href="parduotuve.html?cat=pastos">Dantų pastos <small>156</small></a>
+  <a href="parduotuve.html?cat=vaikams">Vaikams <small>52</small></a>
+  <a href="parduotuve.html?f=akcija">Akcijos</a>
+  <a href="b2b.html">Verslui (B2B)</a>
+  <a class="btn btn--primary" href="parduotuve.html">Apžiūrėti parduotuvę</a>
+</nav>
+
+<div class="cookiebar" data-cookiebar>
+  <div data-cookie-view="main">
+    <h4><svg><use href="#i-cookie"/></svg>Slapukų nustatymai</h4>
+    <p>Naudojame slapukus svetainės veikimui, analitikai ir rinkodarai. Sekimas įjungiamas tik gavus jūsų sutikimą (Google Consent Mode v2).</p>
+    <div class="cookiebar__btns">
+      <button class="btn btn--primary" type="button" data-cookie="all">Sutikti su visais</button>
+      <button class="btn btn--outline" type="button" data-cookie="necessary">Tik būtini</button>
+      <button class="cookiebar__settings" type="button" data-cookie-settings>Nustatymai</button>
+    </div>
+  </div>
+  <div data-cookie-view="settings" hidden>
+    <h4><svg><use href="#i-cookie"/></svg>Pasirinkite slapukus</h4>
+    <div class="cookie-toggles">
+      <div class="cookie-toggle"><div><b>Būtini</b><small>Svetainės veikimui — visada aktyvūs</small></div><label class="switch"><input type="checkbox" checked disabled><i></i></label></div>
+      <div class="cookie-toggle"><div><b>Analitiniai</b><small>Google Analytics 4</small></div><label class="switch"><input type="checkbox" id="ck-analytics"><i></i></label></div>
+      <div class="cookie-toggle"><div><b>Rinkodaros</b><small>Meta Pixel, Google Ads</small></div><label class="switch"><input type="checkbox" id="ck-marketing"><i></i></label></div>
+    </div>
+    <div class="cookiebar__btns">
+      <button class="btn btn--primary" type="button" data-cookie="custom">Išsaugoti pasirinkimą</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast-stack" data-toasts aria-live="polite"></div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
