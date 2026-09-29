@@ -323,29 +323,50 @@ input,select,textarea{font-family:inherit;font-size:15px;color:var(--ink)}
 .hero__scroll span{display:block;width:1.5px;height:38px;background:linear-gradient(180deg,#fff,transparent);animation:drip 2s ease infinite}
 @keyframes drip{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
-/* Plaukiojančios kortelės hero dešinėje */
-.hero__floats{position:absolute;inset:0;z-index:3;pointer-events:none}
+/* Plaukiojanti kortelė („Kodėl Dentora“ sekcijai) */
 .float-card{
   position:absolute;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);
   border:1px solid rgba(255,255,255,.6);border-radius:16px;box-shadow:var(--shadow-l);
   animation:floaty 7s ease-in-out infinite;will-change:transform;
 }
-.float-card--product{right:13%;top:30%;display:flex;gap:12px;align-items:center;padding:12px 18px 12px 12px;animation-delay:.6s}
-.float-card--product img{width:56px;height:56px;border-radius:10px;object-fit:cover}
-.float-card--product .t{font-size:13px;font-weight:700;color:var(--ink);line-height:1.25}
-.float-card--product .p{font-size:13px;font-weight:700;color:var(--aqua-ink)}
 .float-card--review{right:26%;bottom:20%;max-width:250px;padding:16px 18px;animation-delay:1.6s}
 .float-card--review .stars{font-size:13px}
 .float-card--review p{font-size:13px;color:var(--ink);font-weight:600;margin:6px 0 4px;line-height:1.4}
 .float-card--review span{font-size:12px;color:#93A9AB}
-.float-chip{
-  position:absolute;right:8%;top:56%;display:inline-flex;align-items:center;gap:8px;
-  background:var(--deep);color:#BFE9E6;border-radius:999px;padding:10px 18px;
-  font-size:12.5px;font-weight:700;letter-spacing:.04em;box-shadow:var(--shadow-l);
-  animation:floaty 8s ease-in-out infinite;animation-delay:2.4s;
-}
-.float-chip svg{width:15px;height:15px;color:var(--aqua)}
 @keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -14px}}
+
+/* Struktūruotas hero kortelių stulpelis */
+.hero__grid{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:clamp(28px,4vw,72px)}
+.hero__cards{display:flex;flex-direction:column;gap:14px;width:340px;max-width:100%}
+.hero-card{
+  display:flex;align-items:center;gap:13px;
+  background:rgba(255,255,255,.95);backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,.65);border-radius:16px;
+  padding:14px 16px;box-shadow:0 20px 44px -18px rgba(4,26,31,.55);
+  color:var(--ink);text-decoration:none;
+  animation:floatSoft 7s ease-in-out infinite;
+  transition:box-shadow .3s ease,border-color .3s ease;
+}
+.hero__cards .hero-card:nth-child(2){animation-delay:1.4s}
+.hero__cards .hero-card:nth-child(3){animation-delay:2.8s}
+a.hero-card:hover{border-color:var(--aqua);box-shadow:0 26px 52px -16px rgba(4,26,31,.65);color:var(--ink)}
+@keyframes floatSoft{0%,100%{translate:0 0}50%{translate:0 -8px}}
+.hero-card__img{width:60px;height:60px;border-radius:12px;object-fit:cover;flex:none}
+.hero-card__icon{width:46px;height:46px;border-radius:13px;flex:none;display:grid;place-items:center;background:var(--deep);color:#7FE0DA}
+.hero-card__icon svg{width:21px;height:21px}
+.hero-card__body{flex:1;min-width:0}
+.hero-card__label{display:block;font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--aqua-ink);margin-bottom:3px}
+.hero-card__body b{display:block;font-size:14px;line-height:1.3}
+.hero-card__body small{display:block;font-size:12px;color:#7C9294;margin-top:2px}
+.hero-card__meta{display:flex;align-items:center;gap:7px;margin-top:5px}
+.hero-card__meta .stars{font-size:12px;letter-spacing:1.5px}
+.hero-card__count{font-size:11.5px;color:#93A9AB}
+.hero-card__price{margin-left:auto;font-family:var(--font-display);font-weight:800;font-size:15.5px;color:var(--ink)}
+.hero-card--review{display:block}
+.hero-card--review .hero-card__stars{display:flex;align-items:center;gap:7px}
+.hero-card--review .hero-card__stars small{font-weight:800;color:var(--ink);font-size:12px}
+.hero-card--review p{margin:7px 0;font-size:13px;font-weight:600;line-height:1.45;color:var(--ink)}
+.hero-card--review>small{display:block;font-size:11.5px;color:#7C9294}
 
 /* ---------- USP juosta (užlipa ant hero) ---------- */
 .usp-wrap{position:relative;z-index:6;margin-top:-58px}
@@ -953,11 +974,6 @@ input,select,textarea{font-family:inherit;font-size:15px;color:var(--ink)}
 .js .reveal[data-delay="5"]{transition-delay:.4s}
 
 /* ---------- Responsyvas ---------- */
-@media (max-width:1180px){
-  .float-card--review{right:6%}
-  .float-card--product{right:5%}
-  .float-chip{right:4%}
-}
 @media (max-width:1023px){
   .nav{display:none}
   .burger{display:inline-flex}
@@ -974,7 +990,12 @@ input,select,textarea{font-family:inherit;font-size:15px;color:var(--ink)}
   .benefit-grid,.testi-grid,.blog-grid{grid-template-columns:repeat(2,1fr)}
   .steps{grid-template-columns:1fr;max-width:480px}
   .step:not(:last-child)::after{display:none}
-  .hero__floats{display:none}
+  .hero__grid{grid-template-columns:1fr;gap:0}
+  .hero__content{padding:60px 0 0}
+  .hero__cards{flex-direction:row;width:100%;margin:28px 0 56px;padding:4px 2px 10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .hero__cards::-webkit-scrollbar{display:none}
+  .hero-card{flex:0 0 auto;width:min(76vw,270px);scroll-snap-align:start;animation:none}
+  .hero__scroll{display:none}
   .topbar__hide-m{display:none!important}
   .footer__grid{grid-template-columns:1fr 1fr}
 }
@@ -995,7 +1016,6 @@ input,select,textarea{font-family:inherit;font-size:15px;color:var(--ink)}
   .usp:nth-child(n+2){border-top:1px solid var(--mist)}
   .usp-wrap{margin-top:-40px}
   .hero{min-height:640px}
-  .hero__scroll{display:none}
   .form-grid{grid-template-columns:1fr}
   .newsletter form{flex-direction:column;border-radius:22px}
   .newsletter .btn{width:100%}
